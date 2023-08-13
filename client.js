@@ -44,3 +44,7 @@ employeeListTable.innerHTML += ` <tr>
 
 salaryArray.push(annualSalary);
 
+
+function deleteEntry(event){
+event.target.parentElement.parentElement.remove();
+}  
