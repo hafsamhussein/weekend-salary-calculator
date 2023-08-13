@@ -21,11 +21,9 @@ let annualSalary = Number(document.querySelector('#AnnualSalary-input').value);
     
     
 }
-let monthlyTotal = annualSalary / 12;
-monthlyCost += monthlyTotal;
 
 let monthlyColorElement = document.querySelector("#monthlyTotal");
-if (monthlyCost > 20000) {
-    monthlyColorElement.style.backgroundColor = "red";
+if(monthlyCost > 20000) {
+  monthlyColorElement.style.backgroundColor = "red";
 }
 monthlyColorElement.innerText = monthlyCost;
