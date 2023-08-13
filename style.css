@@ -3,22 +3,126 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-    }
-   
+}
+
 .container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+}
 
- header {
+header {
     text-align: center;
-    background-color: #3498db; /* Dodger Blue */
+    background-color: #3498db;
     color: #fff;
     padding: 12px;
     font-weight: bold;
+    margin: 10px 0;
+}
+ 
+    h1 {
+    margin: 0;
     }
-            
-        
+    
+    
+    .add-employee, .employees {
+    margin-top: 20px;
+    }
+    
+    
+    h2 {
+    margin: 0;
+    color: #3498db; /* Dodger Blue */
+    font-size: 24px;
+    }
+    
+    
+    form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    }
+    
+    
+    form input[type="text"], form input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    }
+    
+    
+    form button {
+    grid-column: span 2;
+    padding: 12px;
+    background-color: #3498db; /* Dodger Blue */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    }
+    
+    
+    form button:hover {
+    background-color: #2980b9; /* Darker Dodger Blue */
+    }
+    
+    
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    }
+    
+    
+    thead th {
+    padding: 12px;
+    text-align: left;
+    background-color: #3498db; /* Dodger Blue */
+    color: #fff;
+    }
+    
+    
+    tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light Gray */
+    }
+    
+    
+    tbody td {
+    padding: 12px;
+    text-align: left;
+    }
+    
+    
+    td button {
+    padding: 8px 12px;
+    background-color: #e74c3c; /* Red */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    }
+    
+    
+    td button:hover {
+    background-color: #c0392b; /* Darker Red */
+    }
+    
+    
+    .total {
+    margin-top: 20px;
+    text-align: center;
+    }
+    
+    
+    .total p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3498db; /* Dodger Blue */
+    }
+    
