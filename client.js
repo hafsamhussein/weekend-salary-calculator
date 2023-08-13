@@ -21,4 +21,6 @@ let annualSalary = Number(document.querySelector('#AnnualSalary-input').value);
     
     
 }
+let monthlyTotal = annualSalary / 12;
+monthlyCost += monthlyTotal;
 
