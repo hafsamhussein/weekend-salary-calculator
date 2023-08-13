@@ -27,3 +27,20 @@ if(monthlyCost > 20000) {
   monthlyColorElement.style.backgroundColor = "red";
 }
 monthlyColorElement.innerText = monthlyCost;
+
+let submitbutton = document.querySelector('#Submit-Button');
+submitbutton.addEventListener('click', submit); 
+
+// Inside the 'submit' function, after updating monthly total
+let employeeListTable = document.querySelector("#employeeList");
+employeeListTable.innerHTML += ` <tr>
+     <td>${firstName}</td>
+     <td>${lastName}</td>
+     <td>${iDNumber}</td>
+     <td>${jobTitle}</td>
+     <td>${annualSalary}</td>
+     <td><button onClick="deleteEntry(event)">Delete</button></td>
+ </tr>` ;
+
+salaryArray.push(annualSalary);
+
